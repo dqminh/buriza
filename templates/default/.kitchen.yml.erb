@@ -1,0 +1,14 @@
+---
+driver_plugin: vagrant
+platforms:
+- name: base
+  driver_config:
+    box: base-ubuntu-12.04
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-11.2.0.box
+  run_list:
+suites:
+- name: default
+  run_list:
+  - recipe[minitest-handler]
+  - recipe[<%= @test_name %>]
+  attributes: {}

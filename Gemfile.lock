@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    buriza (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (4.7.0)
+    rake (0.9.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  buriza!
+  minitest
+  rake (~> 0.9)

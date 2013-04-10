@@ -1,0 +1,8 @@
+site :opscode
+
+metadata
+
+group :integration do
+  cookbook "minitest-handler"
+  cookbook "<%= @test_name %>", path: "../../../test/cookbooks/<%= @test_name %>"
+end
