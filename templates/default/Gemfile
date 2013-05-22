@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf',        '~> 1.3.1'
-gem 'test-kitchen',     git: 'git://github.com/action-io/test-kitchen.git', ref: '4ae6917197', group: 'integration'
-gem 'kitchen-vagrant',  git: 'git://github.com/action-io/kitchen-vagrant.git',                 group: 'integration'
+gem 'test-kitchen',     git: 'git://github.com/action-io/test-kitchen.git',     ref: '4ae6917197', group: 'integration'
+gem 'kitchen-vagrant',  git: 'git://github.com/action-io/kitchen-vagrant.git',  ref: '7471a19f0a', group: 'integration'
