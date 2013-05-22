@@ -75,7 +75,7 @@ describe 'Buriza' do
     it 'generates correctly Berksfile' do
       content = IO.read File.join(path, 'Berksfile')
       assert content.include?("cookbook \"minitest-handler\"")
-      assert content.include?("cookbook \"test-cookbook_test\", path: \"../../../test/cookbooks/test-cookbook_test\"")
+      assert content.include?("cookbook \"test-cookbook_test\", path: \"./test/cookbooks/test-cookbook_test\"")
     end
 
     it 'generates correctly CHANGELOG.md' do
